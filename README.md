@@ -12,7 +12,7 @@ git clone https://github.com/tree-sitter/tree-sitter-java
 # setup a "virtual" environment for python to isolate things
 python -m venv venv
 
-# activate the environment (use `deactivate` to exit later)
+# activate the environment (use `deactivate` to exit later) [1]
 source ./venv/bin/activate
 
 # install py-tree-sitter
@@ -38,4 +38,19 @@ program
 class_declaration
 (1, 0)
 (5, 1)
+```
+
+## Footnotes
+
+[1] For Windows, use the following to activate the environment
+instead:
+
+```
+.\venv\Scripts\activate.bat
+```
+
+To deactivate the environment, do:
+
+```
+.\venv\Scripts\deactivate.bat
 ```
